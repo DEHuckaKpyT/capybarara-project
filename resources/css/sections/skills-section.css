@@ -1,0 +1,36 @@
+.skills-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.skills-section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.skills-section__content {
+    display: flex;
+    width: 720px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-section__content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills-section__fruit {
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 50vw);
+}

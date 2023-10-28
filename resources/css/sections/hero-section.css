@@ -1,7 +1,6 @@
 .hero-section {
     position: relative;
     padding-bottom: 120px;
-    width: 1280px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

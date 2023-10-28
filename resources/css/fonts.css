@@ -9,6 +9,10 @@ h1 {
     color: var(--text-default-color);
 }
 
+.font-header-1--light {
+    color: var(--text-light-color);
+}
+
 h2 {
     font-size: 36px;
     line-height: 40px;
@@ -23,24 +27,28 @@ h3 {
     color: var(--text-default-color);
 }
 
-.subtitle {
+.font-subtitle {
     font-size: 20px;
     line-height: 28px;
     color: var(--text-default-color);
 }
 
-.body-1 {
+.font-subtitle--light {
+    color: var(--text-light-color);
+}
+
+.font-body-1 {
     font-size: 18px;
     line-height: 28px;
     color: var(--text-default-color);
 }
 
-.body-2 {
+.font-body-2 {
     font-size: 16px;
     line-height: 24px;
     color: var(--text-default-color);
 }
 
-.body-2--light {
+.font-body-2--light {
     color: var(--text-light-color);
 }
