@@ -32,5 +32,5 @@
 .skills-section__fruit {
     position: absolute;
     bottom: 0;
-    right: calc(50% - 50vw);
+    right: 0;
 }

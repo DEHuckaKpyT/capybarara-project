@@ -13,6 +13,10 @@ h1 {
     color: var(--text-light-color);
 }
 
+.font-header-1--contrasting {
+    color: var(--text-contrasting-color);
+}
+
 h2 {
     font-size: 36px;
     line-height: 40px;
@@ -51,4 +55,8 @@ h3 {
 
 .font-body-2--light {
     color: var(--text-light-color);
+}
+
+.font-body-2--dark {
+    color: var(--text-dark-color);
 }
