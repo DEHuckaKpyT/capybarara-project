@@ -60,3 +60,29 @@ h3 {
 .font-body-2--dark {
     color: var(--text-dark-color);
 }
+
+.font-body-3 {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-default-color);
+}
+
+.font-body-3--light {
+    color: var(--text-light-color);
+}
+
+.font-leave-2-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.font-leave-3-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
