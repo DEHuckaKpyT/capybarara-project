@@ -24,6 +24,10 @@ h2 {
     color: var(--text-default-color);
 }
 
+.font-header-2--light {
+    color: var(--text-light-color);
+}
+
 h3 {
     font-size: 30px;
     line-height: 36px;
