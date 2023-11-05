@@ -7,6 +7,7 @@ h1 {
     line-height: 72px;
     letter-spacing: -0.02em;
     color: var(--text-default-color);
+    font-weight: 700;
 }
 
 .font-header-1--light {
@@ -22,6 +23,7 @@ h2 {
     line-height: 40px;
     letter-spacing: -0.02em;
     color: var(--text-default-color);
+    font-weight: 600;
 }
 
 .font-header-2--light {
@@ -33,28 +35,40 @@ h3 {
     line-height: 36px;
     letter-spacing: -0.02em;
     color: var(--text-default-color);
+    font-weight: 600;
 }
 
 .font-subtitle {
     font-size: 20px;
     line-height: 28px;
     color: var(--text-default-color);
+    font-weight: 400;
 }
 
 .font-subtitle--light {
     color: var(--text-light-color);
 }
 
+.font-subtitle--semi-bold {
+    font-weight: 600;
+}
+
 .font-body-1 {
     font-size: 18px;
     line-height: 28px;
     color: var(--text-default-color);
+    font-weight: 400;
 }
 
 .font-body-2 {
     font-size: 16px;
     line-height: 24px;
     color: var(--text-default-color);
+    font-weight: 400;
+}
+
+.font-body-2--medium {
+    font-weight: 500;
 }
 
 .font-body-2--light {
@@ -69,6 +83,7 @@ h3 {
     font-size: 14px;
     line-height: 20px;
     color: var(--text-default-color);
+    font-weight: 400;
 }
 
 .font-body-3--light {

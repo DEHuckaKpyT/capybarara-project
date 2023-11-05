@@ -33,45 +33,48 @@
     grid-gap: 0 32px;
     height: 264px;
     width: 980px;
+    align-items: start;
     grid-template-areas:
-        "dates description"
-        "dates description"
-        "dates description";
-    /* grid-auto-rows: min-content min-content; */
-}
-
-.experience-section__content-grid__dates {
-    grid-area: dates;
-    /* align-items: start; */
-    align-self: start;
-    width: 228px;
-    padding: 16px 0px;
-    background-color: var(--background-color);
-    text-align: center;
+        "date-1 description"
+        "date-2 description"
+        "date-3 description";
+    grid-template-rows: 72px 56px 72px;
 }
 
 .experience-section__content-grid__date-1 {
-    /* grid-area: date-1; */
-    padding: 16px 0px;
+    grid-area: date-1;
+    width: 228px;
+    padding: 32px 0px 16px;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 12px 12px 0 0;
 }
 
 .experience-section__content-grid__date-2 {
-    /* grid-area: date-2; */
+    grid-area: date-2;
+    width: 228px;
     padding: 16px 0px;
+    text-align: center;
+    background-color: var(--background-color);
 }
 
 .experience-section__content-grid__date-3 {
-    /* grid-area: date-3; */
-    padding: 16px 0px;
+    grid-area: date-3;
+    width: 228px;
+    padding: 16px 0px 32px;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
 }
 
 .experience-section__content-grid__description {
     grid-area: description;
-    /* align-items: start; */
     align-self: start;
     width: 720px;
     padding: 32px;
     background-color: var(--background-color);
+    border-radius: 12px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
     display: flex;
     gap: 48px;
