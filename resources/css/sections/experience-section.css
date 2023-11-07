@@ -32,7 +32,7 @@
     display: grid;
     grid-gap: 0 32px;
     height: 264px;
-    width: 980px;
+    /* width: 980px; */
     align-items: start;
     grid-template-areas:
         "date-1 description"
@@ -71,7 +71,8 @@
 .experience-section__content-grid__description {
     grid-area: description;
     align-self: start;
-    width: 720px;
+    min-width: 420px;
+    min-height: 172px;
     padding: 32px;
     background-color: var(--background-color);
     border-radius: 12px;
@@ -85,6 +86,8 @@
     display: flex;
     gap: 16px;
     flex-direction: column;
+    max-height: 128px;
+    /* overflow-y: auto; */
 }
 
 .experience-section__content-grid__description-container__list {
