@@ -89,3 +89,28 @@
     bottom: 10px;
     left: 17.25%;
 }
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: row-reverse;
+    }
+
+    .hero-section__content-description_body {
+        display: none;
+    }
+
+    .hero-section__pic-container {
+        width: 236px;
+        height: 265px;
+    }
+
+    .hero-section__pic {
+        width: 206px;
+        height: 235px;
+    }
+    
+    .hero-section__pic-shadow {
+        width: 206px;
+        height: 235px;
+    }
+}

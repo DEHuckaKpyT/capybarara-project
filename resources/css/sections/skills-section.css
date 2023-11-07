@@ -16,9 +16,9 @@
 
 .skills-section__content {
     display: flex;
-    width: 720px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .skills-section__content-item {
@@ -33,4 +33,12 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .skills-section__fruit {
+        display: none;
+    }
 }

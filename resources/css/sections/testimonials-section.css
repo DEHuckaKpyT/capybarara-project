@@ -19,7 +19,7 @@
     grid-template-areas:
         "main common-1 common-1"
         "main common-2 common-3";
-        gap: 28px 32px;
+    gap: 28px 32px;
 }
 
 .testimonials-section__content__main-testimonial {
@@ -75,4 +75,22 @@
     align-content: center;
     gap: 4px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-section__content {
+        grid-template-areas:
+            "main main main"
+            "common-1 common-2 common-3";
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section__content {
+        grid-template-areas:
+            "main"
+            "common-1"
+            "common-2"
+            "common-3";
+    }
 }

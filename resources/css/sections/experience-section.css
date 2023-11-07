@@ -1,6 +1,7 @@
 .experience-section {
     position: relative;
     display: flex;
+    gap: 48px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -13,7 +14,8 @@
     align-items: center;
     padding: 0px 32px;
     gap: 48px;
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
 }
 
 .experience-section__content-header {
@@ -31,7 +33,7 @@
 .experience-section__content-grid {
     display: grid;
     grid-gap: 0 32px;
-    height: 264px;
+    height: 100%;
     /* width: 980px; */
     align-items: start;
     grid-template-areas:
@@ -71,7 +73,6 @@
 .experience-section__content-grid__description {
     grid-area: description;
     align-self: start;
-    min-width: 420px;
     min-height: 172px;
     padding: 32px;
     background-color: var(--background-color);
@@ -80,13 +81,14 @@
     display: flex;
     gap: 48px;
     align-items: start;
+    height: 100%;
 }
 
 .experience-section__content-grid__description-container {
     display: flex;
     gap: 16px;
     flex-direction: column;
-    max-height: 128px;
+    /* max-height: 128px; */
     /* overflow-y: auto; */
 }
 
@@ -123,4 +125,57 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+@media (max-width: 768px) {
+    .experience-section__content-grid {
+        grid-template-areas:
+            "date-1"
+            "description"
+            "date-2"
+            "date-3";
+        grid-template-rows: max-content max-content max-content max-content;
+    }
+
+    .experience-section__content-grid__date-1 {
+        grid-area: date-1;
+        width: 100%;
+        padding: 16px 32px;
+        border-bottom: 1px solid var(--gray-200, #E5E7EB);
+        text-align: left;
+    }
+
+    .experience-section__content-grid__date-2 {
+        grid-area: date-2;
+        width: 100%;
+        padding: 16px 32px;
+        border-bottom: 1px solid var(--gray-200, #E5E7EB);
+        text-align: left;
+    }
+
+    .experience-section__content-grid__date-3 {
+        grid-area: date-3;
+        width: 100%;
+        padding: 16px 32px;
+        text-align: left;
+    }
+
+    .experience-section__content-grid__description {
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+    }
+
+    .experience-section__background__left-fruits {
+        display: none;
+    }
+
+    .experience-section__background__center-right-fruits {
+        display: none;
+    }
+
+    .experience-section__background__right-fruits {
+        display: none;
+    }
 }
