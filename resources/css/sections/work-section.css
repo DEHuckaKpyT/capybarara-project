@@ -62,7 +62,7 @@
 .work-section__row-item__tag {
     padding: 4px 20px;
     border-radius: 12px;
-    background: var(--gray-200);
+    background: var(--shadow-color);
 }
 
 .work-section__row-item__link-button {

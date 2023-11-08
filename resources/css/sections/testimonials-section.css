@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.testimonials-section__header__subtitle {
+    text-align: center;
+}
+
 .testimonials-section__content {
     display: grid;
     grid-template-areas:
