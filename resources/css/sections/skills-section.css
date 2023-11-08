@@ -19,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 720px;
 }
 
 .skills-section__content-item {
@@ -35,9 +36,11 @@
     right: 0;
 }
 
-
-
 @media (max-width: 768px) {
+    .skills-section__content {
+        max-width: 480px;
+    }
+
     .skills-section__fruit {
         display: none;
     }
