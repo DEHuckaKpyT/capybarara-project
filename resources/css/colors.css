@@ -7,7 +7,6 @@
     --text-contrasting-color: #F4900C;
     --button-default-color: #F6A63D;
     --button-text-color: #F9FAFB;
-    --image-shadow-color: #E5E7EB;
-
-    --gray-200: #E5E7EB;
+    --shadow-color: #E5E7EB;
+    --scrollbar-color: #D1D5DB;
 }

@@ -58,7 +58,7 @@
     right: 0;
     bottom: 0;
     border: 8px solid var(--background-color);
-    background: var(--image-shadow-color);
+    background: var(--shadow-color);
 }
 
 .hero-section__wave {
