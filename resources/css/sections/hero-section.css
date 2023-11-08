@@ -1,13 +1,15 @@
 .hero-section {
     position: relative;
     padding-bottom: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
+    display: grid;
+    grid-template-areas:
+        "content . picture"
+        "button . picture";
+    grid-template-columns: minmax(0, max-content) auto min-content;
 }
 
 .hero-section__content {
+    grid-area: content;
     display: flex;
     max-width: 768px;
     flex-direction: column;
@@ -23,6 +25,13 @@
     flex-direction: column;
 }
 
+.hero-section__button_link {
+    grid-area: button;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
 .hero-section__button {
     padding: 8px 48px;
     gap: 8px;
@@ -30,6 +39,7 @@
 }
 
 .hero-section__pic-container {
+    grid-area: picture;
     position: relative;
     width: 320px;
     height: 360px;
@@ -92,7 +102,15 @@
 
 @media (max-width: 1024px) {
     .hero-section {
-        flex-direction: row-reverse;
+        grid-template-areas:
+            "picture content ."
+            "picture button button";
+        grid-template-columns: min-content max-content auto;
+    }
+
+    .hero-section__button_link {
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-section__content-description_body {
@@ -108,9 +126,35 @@
         width: 206px;
         height: 235px;
     }
-    
+
     .hero-section__pic-shadow {
         width: 206px;
         height: 235px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-areas:
+            "content"
+            "picture"
+            "button";
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .hero-section__pic-container {
+        width: 279px;
+        height: 314px;
+    }
+
+    .hero-section__pic {
+        width: 244px;
+        height: 279px;
+    }
+
+    .hero-section__pic-shadow {
+        width: 244px;
+        height: 279px;
     }
 }

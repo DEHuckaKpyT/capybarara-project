@@ -83,6 +83,14 @@
             "main main main"
             "common-1 common-2 common-3";
     }
+
+    .testimonials-section__content__common-testimonial__area-2 {
+        margin: 0;
+    }
+
+    .testimonials-section__content__common-testimonial__area-3 {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
