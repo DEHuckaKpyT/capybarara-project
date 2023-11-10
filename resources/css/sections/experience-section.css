@@ -18,7 +18,7 @@
     width: 100%;
 }
 
-.experience-section__content-header {
+.experience-section__header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
     gap: 16px;
 }
 
-.experience-section__content-header__description {
+.experience-section__header-description {
     max-width: 576px;
 }
 
@@ -42,7 +42,7 @@
         ". description";
 }
 
-.experience-section__content-grid__date-1 {
+.experience-section__content-grid--date-1 {
     grid-area: date-1;
     width: 228px;
     padding: 32px 0px 16px;
@@ -51,7 +51,7 @@
     border-radius: 12px 12px 0 0;
 }
 
-.experience-section__content-grid__date-2 {
+.experience-section__content-grid--date-2 {
     grid-area: date-2;
     width: 228px;
     padding: 16px 0px;
@@ -59,7 +59,7 @@
     background-color: var(--background-color);
 }
 
-.experience-section__content-grid__date-3 {
+.experience-section__content-grid--date-3 {
     grid-area: date-3;
     width: 228px;
     padding: 16px 0px 32px;
@@ -68,7 +68,7 @@
     border-radius: 0 0 12px 12px;
 }
 
-.experience-section__content-grid__description {
+.experience-section__grid-description {
     grid-area: description;
     align-self: start;
     padding: 32px;
@@ -79,7 +79,7 @@
     height: 100%;
 }
 
-.experience-section__content-grid__description-container {
+.experience-section__grid-description-container {
     display: flex;
     gap: 16px;
     flex-direction: column;
@@ -87,44 +87,45 @@
     overflow-y: auto;
 }
 
-.experience-section__content-grid__description-container::-webkit-scrollbar {
+.experience-section__grid-description-container::-webkit-scrollbar {
     width: 4px;
 }
 
-.experience-section__content-grid__description-container::-webkit-scrollbar-thumb {
+.experience-section__grid-description-container::-webkit-scrollbar-thumb {
     background: var(--scrollbar-color);
 }
 
-.experience-section__content-grid__description-container__list {
+.experience-section__grid-description-container-list {
     display: flex;
     gap: 16px;
     flex-direction: column;
 }
 
-.experience-section__content-grid__description-container__list-item {
+.experience-section__grid-description-container-item {
     display: flex;
     gap: 8px;
 }
 
-.experience-section__content-grid__description-container__list-item__icon {
-    display: flex;
-    padding-top: 9px;
-    align-items: flex-start;
+.experience-section__grid-description-container-item::before {
+    content: "•";
+    align-self: center;
+    font-size: 20px;
+    color: var(--text-contrasting-color);
 }
 
-.experience-section__background__left-fruits {
+.experience-section__left-fruits {
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-.experience-section__background__center-right-fruits {
+.experience-section__center-right-fruits {
     position: absolute;
     bottom: 0;
     right: 17.5%;
 }
 
-.experience-section__background__right-fruits {
+.experience-section__right-fruits {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -140,7 +141,7 @@
         grid-template-rows: max-content max-content max-content max-content;
     }
 
-    .experience-section__content-grid__date-1 {
+    .experience-section__content-grid--date-1 {
         grid-area: date-1;
         width: 100%;
         padding: 16px 32px;
@@ -148,7 +149,7 @@
         text-align: left;
     }
 
-    .experience-section__content-grid__date-2 {
+    .experience-section__content-grid--date-2 {
         grid-area: date-2;
         width: 100%;
         padding: 16px 32px;
@@ -156,33 +157,33 @@
         text-align: left;
     }
 
-    .experience-section__content-grid__date-3 {
+    .experience-section__content-grid--date-3 {
         grid-area: date-3;
         width: 100%;
         padding: 16px 32px;
         text-align: left;
     }
 
-    .experience-section__content-grid__description {
+    .experience-section__grid-description {
         flex-direction: column;
         gap: 24px;
         border-radius: 0 0 12px 12px;
     }
 
-    .experience-section__content-grid__description-container {
+    .experience-section__grid-description-container {
         max-height: unset;
         overflow-y: hidden;
     }
 
-    .experience-section__background__left-fruits {
+    .experience-section__left-fruits {
         display: none;
     }
 
-    .experience-section__background__center-right-fruits {
+    .experience-section__center-right-fruits {
         display: none;
     }
 
-    .experience-section__background__right-fruits {
+    .experience-section__right-fruits {
         display: none;
     }
 }

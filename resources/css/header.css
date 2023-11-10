@@ -10,7 +10,7 @@ header {
     max-height: 36px;
 }
 
-.header__container {
+.header {
     display: flex;
     justify-content: space-between;
     flex: 1 0 0;
@@ -18,14 +18,14 @@ header {
     max-width: 1280px;
 }
 
-.header__container__navigation {
+.header__navigation {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
-.header__container__burger-menu-button {
+.header__burger-menu-button {
     display: none;
     padding: 6px;
     justify-content: center;
@@ -37,11 +37,11 @@ header {
 }
 
 @media (max-width: 768px) {
-    .header__container__navigation {
+    .header__navigation {
         display: none;
     }
 
-    .header__container__burger-menu-button {
+    .header__burger-menu-button {
         display: flex;
     }
 }
