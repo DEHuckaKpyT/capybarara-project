@@ -1,4 +1,4 @@
-.testimonials-section {
+#testimonials-section {
     display: flex;
     gap: 48px;
     flex-direction: column;
@@ -26,54 +26,49 @@
     gap: 28px 32px;
 }
 
-.testimonials-section__content__main-testimonial {
+.testimonials-section__content .main-testimonial {
     grid-area: main;
     display: flex;
     flex-direction: column;
     padding: 32px;
     gap: 24px;
     background-color: var(--background-color);
-    border-radius: 12px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
 }
 
-.testimonials-section__content__main-testimonial__header {
+.testimonials-section__content .main-testimonial__header {
     display: flex;
     gap: 32px;
 }
 
-.testimonials-section__content__main-testimonial__header__info {
+.testimonials-section__content .main-testimonial__header__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.testimonials-section__content__common-testimonial {
+.testimonials-section__content .common-testimonial {
     display: flex;
     padding: 32px;
     flex-direction: column;
     gap: 16px;
     background-color: var(--background-color);
-    background-color: var(--background-color);
-    border-radius: 12px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
 }
 
-.testimonials-section__content__common-testimonial__area-1 {
+.testimonials-section__content .common-testimonial__area-1 {
     grid-area: common-1;
 }
 
-.testimonials-section__content__common-testimonial__area-2 {
+.testimonials-section__content .common-testimonial__area-2 {
     grid-area: common-2;
     margin-right: 8px;
 }
 
-.testimonials-section__content__common-testimonial__area-3 {
+.testimonials-section__content .common-testimonial__area-3 {
     grid-area: common-3;
     margin-left: 8px;
 }
 
-.testimonials-section__content__common-testimonial__header {
+.testimonials-section__content .common-testimonial__header {
     display: flex;
     align-items: center;
     align-content: center;
@@ -88,11 +83,11 @@
             "common-1 common-2 common-3";
     }
 
-    .testimonials-section__content__common-testimonial__area-2 {
+    .testimonials-section__content .common-testimonial__area-2 {
         margin: 0;
     }
 
-    .testimonials-section__content__common-testimonial__area-3 {
+    .testimonials-section__content .common-testimonial__area-3 {
         margin: 0;
     }
 }

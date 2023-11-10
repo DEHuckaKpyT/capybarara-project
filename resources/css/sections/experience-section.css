@@ -1,4 +1,4 @@
-.experience-section {
+#experience-section {
     position: relative;
     display: flex;
     gap: 48px;
@@ -66,7 +66,6 @@
     text-align: center;
     background-color: var(--background-color);
     border-radius: 0 0 12px 12px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
 }
 
 .experience-section__content-grid__description {
@@ -74,8 +73,6 @@
     align-self: start;
     padding: 32px;
     background-color: var(--background-color);
-    border-radius: 12px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
     display: flex;
     gap: 48px;
     align-items: start;
@@ -170,7 +167,6 @@
         flex-direction: column;
         gap: 24px;
         border-radius: 0 0 12px 12px;
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
     }
 
     .experience-section__content-grid__description-container {

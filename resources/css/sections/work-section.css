@@ -1,4 +1,4 @@
-.work-section {
+#work-section {
     display: flex;
     gap: 48px;
     flex-direction: column;
@@ -20,8 +20,6 @@
 
 .work-section__row-items {
     display: flex;
-    border-radius: 12px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -45,8 +43,6 @@
 }
 
 .work-section__row-item__image {
-    border-radius: 12px;
-    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.04), 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
     overflow: hidden;
     width: 100%;
 }
