@@ -17,7 +17,12 @@
     <link rel="stylesheet" href="./resources/css/sections/experience-section.css">
     <link rel="stylesheet" href="./resources/css/sections/work-section.css">
     <link rel="stylesheet" href="./resources/css/sections/testimonials-section.css">
+    <link rel="stylesheet" href="./resources/css/sections/contact-section.css">
     <link rel="stylesheet" href="./resources/css/sections/footer-section.css">
+    <script src="./resources/js/general.js"></script>
+    <script src="./resources/js/header.js"></script>
+    <script src="./resources/js/sections/experience-section.js"></script>
+    <script src="./resources/js/sections/footer-section.js"></script>
 </head>
 
 <body>
@@ -32,6 +37,19 @@
                 <a class="font-body-2 font-body-2--light font-body-2--medium" href="#footer-section">Contact</a>
             </nav>
             <img class="header__burger-menu-button" src="./resources/images/header/burger-menu.svg" alt="menu">
+        </div>
+        <div class="burger-menu drop-shadow--2xl">
+            <div class="burger-menu__header">
+                <img class="burger-menu__logo" src="./resources/images/header/logo.svg" alt="logo">
+                <img class="burger-menu__close-button" src="./resources/images/cross.svg" alt="cross">
+            </div>
+            <nav class="burger-menu__navigation">
+                <a class="font-body-2 font-body-2--light font-body-2--medium" href="#experience-section">Experience</a>
+                <a class="font-body-2 font-body-2--light font-body-2--medium" href="#work-section">Work</a>
+                <a class="font-body-2 font-body-2--light font-body-2--medium"
+                    href="#testimonials-section">Testimonials</a>
+                <a class="font-body-2 font-body-2--light font-body-2--medium" href="#footer-section">Contact</a>
+            </nav>
         </div>
     </header>
 
@@ -97,6 +115,12 @@
     </section>
 
     <section id="experience-section">
+        <img class="experience-section__left-fruits"
+            src="./resources/images/sections/experience-section/letf-fruits.png" alt="fruits">
+        <img class="experience-section__center-right-fruits"
+            src="./resources/images/sections/experience-section/center-right-fruits.png" alt="fruits">
+        <img class="experience-section__right-fruits"
+            src="./resources/images/sections/experience-section/right-fruits.png" alt="fruits">
         <div class="experience-section__content">
             <div class="experience-section__header">
                 <h2 class="font-heading-1 font-heading-1--contrasting"> Experience </h2>
@@ -115,7 +139,8 @@
             <div class="experience-section__content-grid--date-3 font-body-2 font-body-2--light drop-shadow--md">
                 May 2019 - Dec 2019
             </div>
-            <div class="experience-section__grid-description drop-shadow--md">
+            <div
+                class="experience-section__grid-description experience-section__grid-description--desc-1 drop-shadow--md">
                 <img src="./resources/images/sections/experience-section/ws-logo.svg" alt="White soft">
                 <div class="experience-section__grid-description-container">
                     <div class="font-subtitle">
@@ -123,7 +148,6 @@
                     </div>
                     <ul class="experience-section__grid-description-container-list">
                         <li class="experience-section__grid-description-container-item font-body-2">
-
                             Collaborating with senior developers to enhance skills and learn new technologies
                         </li>
                         <li class="experience-section__grid-description-container-item font-body-2">
@@ -135,13 +159,38 @@
                     </ul>
                 </div>
             </div>
+            <div
+                class="experience-section__grid-description experience-section__grid-description--desc-2 drop-shadow--md">
+                <img src="./resources/images/sections/experience-section/ws-logo.svg" alt="White soft">
+                <div class="experience-section__grid-description-container">
+                    <div class="font-subtitle">
+                        Junior Frontend Developer
+                    </div>
+                    <ul class="experience-section__grid-description-container-list">
+                        <li class="experience-section__grid-description-container-item font-body-2">
+                            Participating in code reviews and receiving feedback
+                        </li>
+                        <li class="experience-section__grid-description-container-item font-body-2">
+                            Collaborating with UI/UX designers to implement usability and accessibility enhancements
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="experience-section__grid-description experience-section__grid-description--desc-3 drop-shadow--md">
+                <img src="./resources/images/sections/experience-section/ws-logo.svg" alt="White soft">
+                <div class="experience-section__grid-description-container">
+                    <div class="font-subtitle">
+                        Frontend Trainee
+                    </div>
+                    <ul class="experience-section__grid-description-container-list">
+                        <li class="experience-section__grid-description-container-item font-body-2">
+                            Testing and debugging features or code snippets
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <img class="experience-section__left-fruits"
-            src="./resources/images/sections/experience-section/letf-fruits.png" alt="fruits">
-        <img class="experience-section__center-right-fruits"
-            src="./resources/images/sections/experience-section/center-right-fruits.png" alt="fruits">
-        <img class="experience-section__right-fruits"
-            src="./resources/images/sections/experience-section/right-fruits.png" alt="fruits">
     </section>
 
     <section id="work-section">
@@ -307,6 +356,33 @@
         </div>
     </section>
 
+    <section id="contact-section">
+        <div class="contact-section__header">
+            <h2 class="font-heading-1">Contact Capibarara</h2>
+            <p class="font-subtitle font-subtitle--light">Do you wanna chat with Capibarara? Then send the request!</p>
+        </div>
+        <form action="#" name="contact" class="contact-section__form drop-shadow--lg">
+            <label class="contact-section__form-label font-body-3">
+                Subject*
+                <input name="subject" class="contact-section__form-input font-body-1" type="text">
+            </label>
+            <label class="contact-section__form-label font-body-3">
+                Name*
+                <input name="name" class="contact-section__form-input font-body-1" type="text" value="Capibarara fan">
+            </label>
+            <label class="contact-section__form-label font-body-3">
+                Phone*
+                <input name="phone" class="contact-section__form-input font-body-1" type="text">
+            </label>
+            <label class="contact-section__form-label font-body-3">
+                Description
+                <input name="description"
+                    class="contact-section__form-input contact-section__form-description font-body-1" type="text">
+            </label>
+            <button class="contact-section__submit-button font-body-2">Send It!</button>
+        </form>
+    </section>
+
     <section id="footer-section">
         <div class="footer-section__header">
             <h2 class="font-heading-1 font-heading-1--light"> Get in touch </h2>
@@ -318,18 +394,23 @@
         <div class="footer-section__contact-items">
             <div class="footer-section__contact-item">
                 <img src="./resources/images/sections/footer-section/icon-email.svg" alt="email icon">
-                <a class="font-heading-2 font-heading-2--light" href="mailto: capibarara@gmail.com">
+                <p class="font-heading-2 font-heading-2--light contrast-letters">
                     capibarara@gmail.com
-                </a>
+                </p>
             </div>
             <div class="footer-section__contact-item">
                 <img src="./resources/images/sections/footer-section/icon-phone.svg" alt="phone icon">
-                <a class="font-heading-2 font-heading-2--light" href="tel: +8 800 200-59-20">
+                <p class="font-heading-2 font-heading-2--light contrast-letters">
                     +8 800 200-59-20
-                </a>
+                </p>
             </div>
         </div>
     </section>
+
+    <div class="annoying-message">
+        <img class="annoying-message__image" src="./resources/images/annoying-capybara.png" alt="annoying capybara">
+        <img class="annoying-message__cross" src="./resources/images/cross.svg" alt="cross">
+    </div>
 </body>
 
 </html>

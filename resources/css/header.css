@@ -34,6 +34,47 @@ header {
     height: 36px;
     border-radius: 8px;
     background: var(--button-default-color);
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    /* как, блин, нормально задать, учитывая ширину скрола? */
+    /* right: 15px; */
+    right: 0;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    z-index: 2;
+    background: var(--background-color);
+    border-radius: 0px;
+}
+
+.burger-menu__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid var(--background-secondary-color);
+}
+
+.burger-menu__close-button {
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--button-default-color);
+    cursor: pointer;
+}
+
+.burger-menu__navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    border-bottom: 1px solid var(--background-secondary-color);
 }
 
 @media (max-width: 768px) {
@@ -43,5 +84,11 @@ header {
 
     .header__burger-menu-button {
         display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
     }
 }
