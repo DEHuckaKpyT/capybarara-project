@@ -21,18 +21,23 @@ async function makeStringsContrast() {
         const content = stringElement.textContent.trim()
         stringElement.textContent = ''
 
+        let colorCounter = 0
         for (let i = 0; i < content.length; i++) {
             const char = content.charAt(i);
 
             const span = document.createElement('span')
             span.textContent = char
-            if (i % 2 == 0) {
+            if (colorCounter % 2 == 0) {
                 span.style.color = 'var(--text-contrasting-color)'
             } else {
                 span.style.color = 'var(--text-contrasting-light-color)'
             }
 
             stringElement.appendChild(span)
+
+            if (char != ' ') {
+                colorCounter++
+            }
         }
     })
 }

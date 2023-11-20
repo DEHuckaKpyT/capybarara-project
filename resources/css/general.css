@@ -4,14 +4,6 @@ body {
     align-items: center;
 }
 
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--button-default-color);
-    color: var(--button-text-color) !important;
-}
-
 .drop-shadow--md {
     border-radius: 12px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
@@ -29,8 +21,7 @@ button {
 
 .annoying-message {
     position: fixed;
-    /* как, блин, нормально задать, учитывая ширину скрола? */
-    right: 15px;
+    right: 0;
     bottom: 0;
     width: 410px;
     height: 262px;
