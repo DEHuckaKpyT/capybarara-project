@@ -1,0 +1,12 @@
+:root {
+    --background-color: #ffffff;
+    --background-secondary-color: #F9FAFB;
+    --text-default-color: #111827;
+    --text-light-color: #4B5563;
+    --text-dark-color: #030712;
+    --text-contrasting-color: #F4900C;
+    --button-default-color: #F6A63D;
+    --button-text-color: #F9FAFB;
+    --shadow-color: #E5E7EB;
+    --scrollbar-color: #D1D5DB;
+}

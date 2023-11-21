@@ -1,0 +1,189 @@
+#experience-section {
+    position: relative;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-secondary-color);
+}
+
+.experience-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 48px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.experience-section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.experience-section__header-description {
+    max-width: 576px;
+}
+
+.experience-section__content-grid {
+    display: grid;
+    grid-gap: 0 32px;
+    height: 100%;
+    align-items: start;
+    grid-template-areas:
+        "date-1 description"
+        "date-2 description"
+        "date-3 description"
+        ". description";
+}
+
+.experience-section__content-grid--date-1 {
+    grid-area: date-1;
+    width: 228px;
+    padding: 32px 0px 16px;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 12px 12px 0 0;
+}
+
+.experience-section__content-grid--date-2 {
+    grid-area: date-2;
+    width: 228px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.experience-section__content-grid--date-3 {
+    grid-area: date-3;
+    width: 228px;
+    padding: 16px 0px 32px;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 0 0 12px 12px;
+}
+
+.experience-section__grid-description {
+    grid-area: description;
+    align-self: start;
+    padding: 32px;
+    background-color: var(--background-color);
+    display: flex;
+    gap: 48px;
+    align-items: start;
+    height: 100%;
+}
+
+.experience-section__grid-description-container {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.experience-section__grid-description-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.experience-section__grid-description-container::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+}
+
+.experience-section__grid-description-container-list {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.experience-section__grid-description-container-item {
+    display: flex;
+    gap: 8px;
+}
+
+.experience-section__grid-description-container-item::before {
+    content: "•";
+    align-self: center;
+    font-size: 20px;
+    color: var(--text-contrasting-color);
+}
+
+.experience-section__left-fruits {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.experience-section__center-right-fruits {
+    position: absolute;
+    bottom: 0;
+    right: 17.5%;
+}
+
+.experience-section__right-fruits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .experience-section__content-grid {
+        grid-template-areas:
+            "date-1"
+            "description"
+            "date-2"
+            "date-3";
+        grid-template-rows: max-content max-content max-content max-content;
+    }
+
+    .experience-section__content-grid--date-1 {
+        grid-area: date-1;
+        width: 100%;
+        padding: 16px 32px;
+        border-bottom: 1px solid var(--shadow-color);
+        text-align: left;
+    }
+
+    .experience-section__content-grid--date-2 {
+        grid-area: date-2;
+        width: 100%;
+        padding: 16px 32px;
+        border-bottom: 1px solid var(--shadow-color);
+        text-align: left;
+    }
+
+    .experience-section__content-grid--date-3 {
+        grid-area: date-3;
+        width: 100%;
+        padding: 16px 32px;
+        text-align: left;
+    }
+
+    .experience-section__grid-description {
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .experience-section__grid-description-container {
+        max-height: unset;
+        overflow-y: hidden;
+    }
+
+    .experience-section__left-fruits {
+        display: none;
+    }
+
+    .experience-section__center-right-fruits {
+        display: none;
+    }
+
+    .experience-section__right-fruits {
+        display: none;
+    }
+}
