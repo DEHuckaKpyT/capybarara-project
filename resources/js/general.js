@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    await makeAnnoyingCapybaraClosable()
-    await makeStringsContrast()
+    makeAnnoyingCapybaraClosable()
+    makeStringsContrast()
 })
 
 async function makeAnnoyingCapybaraClosable() {

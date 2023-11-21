@@ -1,17 +1,5 @@
-const valuesBySelectedDate = new Map([
-    ['date-1', {
-
-    }],
-    ['date-2', {
-
-    }],
-    ['date-3', {
-
-    }]
-]);
-
 document.addEventListener('DOMContentLoaded', async function () {
-    await makeInteractiveExperienceGrid()
+    makeInteractiveExperienceGrid()
 })
 
 async function makeInteractiveExperienceGrid() {
