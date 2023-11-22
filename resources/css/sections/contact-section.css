@@ -37,7 +37,7 @@
     color: var(--gray-500);
 }
 
-.contact-section__form-required-label {
+.contact-section__form-error-label {
     color: var(--error-color);
 }
 
@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-.contact-section__form-required-input {
+.contact-section__form-error-input {
     border: 1px solid var(--error-color);
 }
 
@@ -67,7 +67,6 @@
     align-items: center;
     gap: 8px;
     border-radius: 20px;
-    /* opacity: 0.4; */
     color: var(--button-text-color);
     background: var(--button-default-color);
 }

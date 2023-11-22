@@ -19,11 +19,11 @@ async function makeContactButtonActive() {
         const field = event.target
 
         if (isBlank(field.value)) {
-            field.classList.add('contact-section__form-required-input')
-            field.parentNode.classList.add('contact-section__form-required-label') // здесь это всегда label
+            field.classList.add('contact-section__form-error-input')
+            field.parentNode.classList.add('contact-section__form-error-label') // здесь это всегда label
         } else {
-            field.classList.remove('contact-section__form-required-input')
-            field.parentNode.classList.remove('contact-section__form-required-label') // здесь это всегда label
+            field.classList.remove('contact-section__form-error-input')
+            field.parentNode.classList.remove('contact-section__form-error-label') // здесь это всегда label
         }
     }
 
