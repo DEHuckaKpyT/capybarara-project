@@ -23,8 +23,8 @@ body {
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 410px;
-    height: 262px;
+    max-width: 410px;
+    width: 100%;
     z-index: 2;
 }
 
@@ -43,7 +43,5 @@ body {
 }
 
 .annoying-message__image {
-    position: absolute;
-    width: 410px;
-    height: 262px;
+    width: 100%;
 }
