@@ -23,6 +23,7 @@
     <script src="./resources/js/header.js"></script>
     <script src="./resources/js/sections/experience-section.js"></script>
     <script src="./resources/js/sections/footer-section.js"></script>
+    <script src="./resources/js/sections/contact-section.js"></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
         </div>
     </header>
 
-    <section id="hero-section">
+    <!-- <section id="hero-section">
         <div class="hero-section__content">
             <div class="hero-section__content-description">
                 <h1 class="font-heading-1"> Hi, I’m Capybarara&nbsp;👋 </h1>
@@ -355,7 +356,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contact-section">
         <div class="contact-section__header">
@@ -377,10 +378,10 @@
             </label>
             <label class="contact-section__form-label font-body-3">
                 Description
-                <input name="description"
-                    class="contact-section__form-input contact-section__form-description font-body-1" type="text">
+                <textarea name="description"
+                    class="contact-section__form-input contact-section__form-description font-body-1" type="text"></textarea>
             </label>
-            <button class="contact-section__submit-button font-body-2">Send It!</button>
+            <button name="submitButton" class="contact-section__submit-button font-body-2" disabled>Send It!</button>
         </form>
     </section>
 
