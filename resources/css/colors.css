@@ -5,8 +5,13 @@
     --text-light-color: #4B5563;
     --text-dark-color: #030712;
     --text-contrasting-color: #F4900C;
+    --text-contrasting-light-color: #FFD600;
     --button-default-color: #F6A63D;
     --button-text-color: #F9FAFB;
     --shadow-color: #E5E7EB;
     --scrollbar-color: #D1D5DB;
+
+    --gray-90010: rgba(17, 24, 39, 0.10);
+    --gray-500: #6B7280;
+    --gray-50: #F9FAFB;
 }

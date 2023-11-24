@@ -28,4 +28,5 @@
 .footer-section__contact-item {
     display: flex;
     gap: 8px;
+    cursor: pointer;
 }

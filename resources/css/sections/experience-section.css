@@ -40,6 +40,7 @@
         "date-2 description"
         "date-3 description"
         ". description";
+    z-index: 1;
 }
 
 .experience-section__content-grid--date-1 {
@@ -49,6 +50,7 @@
     text-align: center;
     background-color: var(--background-color);
     border-radius: 12px 12px 0 0;
+    cursor: pointer;
 }
 
 .experience-section__content-grid--date-2 {
@@ -57,6 +59,7 @@
     padding: 16px 0px;
     text-align: center;
     background-color: var(--background-color);
+    cursor: pointer;
 }
 
 .experience-section__content-grid--date-3 {
@@ -66,6 +69,7 @@
     text-align: center;
     background-color: var(--background-color);
     border-radius: 0 0 12px 12px;
+    cursor: pointer;
 }
 
 .experience-section__grid-description {
@@ -77,6 +81,16 @@
     gap: 48px;
     align-items: start;
     height: 100%;
+}
+
+.experience-section__grid-description--desc-1 {}
+
+.experience-section__grid-description--desc-2 {
+    display: none;
+}
+
+.experience-section__grid-description--desc-3 {
+    display: none;
 }
 
 .experience-section__grid-description-container {
@@ -138,7 +152,8 @@
             "description"
             "date-2"
             "date-3";
-        grid-template-rows: max-content max-content max-content max-content;
+        grid-template-rows: max-content;
+        /* grid-template-columns: max-content; */
     }
 
     .experience-section__content-grid--date-1 {
