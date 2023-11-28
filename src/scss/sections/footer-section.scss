@@ -1,0 +1,22 @@
+.footer-section {
+    @include centered-flex(48px);
+    background-color: $background-secondary-color;
+
+    &__header {
+        @include centered-flex(16px);
+    }
+
+    &__header-description {
+        max-width: 576px;
+        text-align: center;
+    }
+
+    &__contact-items {
+        @include centered-flex(16px);
+    }
+
+    &__contact-item {
+        @include flex(8px, row);
+        cursor: pointer;
+    }
+}

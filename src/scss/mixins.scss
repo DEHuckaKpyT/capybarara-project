@@ -1,0 +1,18 @@
+@mixin centered-flex($gap: unset, $direction: column) {
+    display: flex;
+    gap: $gap;
+    flex-direction: $direction;
+    align-items: center;
+    justify-items: center;
+}
+
+@mixin flex($gap: unset, $direction: column) {
+    display: flex;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}

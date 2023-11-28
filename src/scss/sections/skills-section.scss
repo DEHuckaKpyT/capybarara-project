@@ -1,0 +1,36 @@
+.skills-section {
+    position: relative;
+    @include centered-flex(48px);
+
+    &__header {
+        @include centered-flex(16px);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 720px;
+    }
+
+    &__content-item {
+        @include centered-flex(8px);
+    }
+
+    &__fruit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @media (max-width: 768px) {
+        &__content {
+            max-width: 480px;
+        }
+
+        &__fruit {
+            display: none;
+        }
+    }
+}

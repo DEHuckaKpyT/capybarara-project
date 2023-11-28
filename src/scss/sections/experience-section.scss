@@ -1,0 +1,187 @@
+.experience-section {
+    position: relative;
+    @include centered-flex(48px);
+    background-color: $background-secondary-color;
+
+
+    &__content {
+        @include centered-flex(48px);
+        padding: 0px 32px;
+        max-width: 1280px;
+        width: 100%;
+    }
+
+    &__header {
+        @include centered-flex(16px);
+    }
+
+    &__header-description {
+        max-width: 576px;
+    }
+
+    &__content-grid {
+        display: grid;
+        grid-gap: 0 32px;
+        height: 100%;
+        align-items: start;
+        grid-template-areas:
+            "date-1 description"
+            "date-2 description"
+            "date-3 description"
+            ". description";
+        z-index: 1;
+    }
+
+    &__content-grid--date-1 {
+        grid-area: date-1;
+        width: 228px;
+        padding: 32px 0px 16px;
+        text-align: center;
+        background-color: $background-color;
+        border-radius: 12px 12px 0 0;
+        cursor: pointer;
+    }
+
+    &__content-grid--date-2 {
+        grid-area: date-2;
+        width: 228px;
+        padding: 16px 0px;
+        text-align: center;
+        background-color: $background-color;
+        cursor: pointer;
+    }
+
+    &__content-grid--date-3 {
+        grid-area: date-3;
+        width: 228px;
+        padding: 16px 0px 32px;
+        text-align: center;
+        background-color: $background-color;
+        border-radius: 0 0 12px 12px;
+        cursor: pointer;
+    }
+
+    &__grid-description {
+        grid-area: description;
+        align-self: start;
+        padding: 32px;
+        background-color: $background-color;
+        @include flex(48px, row);
+        align-items: start;
+        height: 100%;
+
+        // &--desc-1 {}
+
+        &--desc-2 {
+            display: none;
+        }
+
+        &--desc-3 {
+            display: none;
+        }
+
+        &-container {
+            @include flex(16px);
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        &-container::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &-container::-webkit-scrollbar-thumb {
+            background: $scrollbar-color;
+        }
+
+        &-container-list {
+            @include flex(16px);
+        }
+
+        &-container-item {
+            @include flex(8px, row);
+        }
+
+        &-container-item::before {
+            content: "•";
+            align-self: center;
+            font-size: 20px;
+            color: $text-contrasting-color;
+        }
+    }
+
+    &__left-fruits {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__center-right-fruits {
+        position: absolute;
+        bottom: 0;
+        right: 17.5%;
+    }
+
+    &__right-fruits {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @media (max-width: 768px) {
+        &__content-grid {
+            grid-template-areas:
+                "date-1"
+                "description"
+                "date-2"
+                "date-3";
+            grid-template-rows: max-content;
+        }
+
+        &__content-grid--date-1 {
+            grid-area: date-1;
+            width: 100%;
+            padding: 16px 32px;
+            border-bottom: 1px solid $shadow-color;
+            text-align: left;
+        }
+
+        &__content-grid--date-2 {
+            grid-area: date-2;
+            width: 100%;
+            padding: 16px 32px;
+            border-bottom: 1px solid $shadow-color;
+            text-align: left;
+        }
+
+        &__content-grid--date-3 {
+            grid-area: date-3;
+            width: 100%;
+            padding: 16px 32px;
+            text-align: left;
+        }
+
+        &__grid-description {
+            flex-direction: column;
+            gap: 24px;
+            border-radius: 0 0 12px 12px;
+        }
+
+        &__grid-description-container {
+            max-height: unset;
+            overflow-y: hidden;
+        }
+
+        &__left-fruits {
+            display: none;
+        }
+
+        &__center-right-fruits {
+            display: none;
+        }
+
+        &__right-fruits {
+            display: none;
+        }
+    }
+}

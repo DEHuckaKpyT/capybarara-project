@@ -1,24 +1,23 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    makeAnnoyingCapybaraClosable();
+    makePhoneNumberCopyable();
     makeStringsContrast();
 });
 
-async function makeAnnoyingCapybaraClosable() {
-    const message = document.querySelector('.annoying-message');
-    const button = document.querySelector('.annoying-message__cross');
+async function makePhoneNumberCopyable() {
+    const contacts = document.querySelectorAll('.footer-section__contact-item');
 
-    button.addEventListener('click', async function () {
-        message.style.display = 'none';
-        await sleep(120_000); // 2 минуты
-        message.style.display = 'block';
-    })
+    contacts.forEach(contact => {
+        contact.addEventListener('click', async function () {
+            navigator.clipboard.writeText(contact.textContent!.trim());
+        });
+    });
 }
 
 async function makeStringsContrast() {
     const strings = document.querySelectorAll('.contrast-letters');
 
     strings.forEach(stringElement => {
-        const content = stringElement.textContent.trim();
+        const content = stringElement.textContent!.trim();
         stringElement.textContent = '';
 
         let colorCounter = 0;
@@ -38,8 +37,4 @@ async function makeStringsContrast() {
             }
         }
     })
-}
-
-function sleep(milliseconds) {
-    return new Promise(resolve => setTimeout(resolve, milliseconds));
 }

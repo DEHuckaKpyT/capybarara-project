@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'general';
+@import 'header';
+
+@import 'sections/sections-general.scss';
+@import 'sections/hero-section.scss';
+@import 'sections/skills-section.scss';
+@import 'sections/experience-section.scss';
+@import 'sections/work-section.scss';
+@import 'sections/testimonials-section.scss';
+@import 'sections/contact-section.scss';
+@import 'sections/footer-section.scss';
