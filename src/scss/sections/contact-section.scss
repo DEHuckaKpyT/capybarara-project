@@ -1,0 +1,62 @@
+.contact-section {
+    @include centered-flex(48px);
+    background-image: url("/resources/images/sections/contact-section/background-parallax.svg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__header {
+        @include centered-flex(16px);
+    }
+
+    &__form {
+        @include centered-flex(24px);
+        padding: 48px;
+        max-width: 546px;
+        width: 100%;
+        border-radius: 12px;
+        background: $gray-50;
+    }
+
+    &__form-label {
+        width: 100%;
+        color: $gray-500;
+    }
+
+    &__form-error-label {
+        color: $error-color;
+    }
+
+    &__form-input {
+        @include size(100%, 48px);
+        display: flex;
+        padding: 12px 16px;
+        align-items: flex-start;
+        border-radius: 12px;
+        border: 1px solid $gray-500;
+        background: $gray-50;
+    }
+
+    &__form-error-input {
+        border: 1px solid $error-color;
+    }
+
+    &__form-description {
+        height: 160px;
+    }
+
+    &__submit-button {
+        @include centered-flex(8px, row);
+        padding: 8px 48px;
+        border-radius: 20px;
+        color: $button-text-color;
+        background: $button-default-color;
+    }
+
+    &__submit-button:disabled {
+        opacity: 0.4;
+    }
+}
