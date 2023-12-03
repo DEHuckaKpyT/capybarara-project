@@ -7,13 +7,7 @@ async function makeContactButtonActive() {
     const requiredFields = [contactForm.subject, contactForm.name, contactForm.phone];
 
     const checkerAll = async function checkRequiredInputs() {
-        for (let i = 0; i < requiredFields.length; i++) {
-            if (isBlank(requiredFields[i].value)) {
-                contactForm.submitButton.disabled = true;
-                return;
-            }
-        }
-        contactForm.submitButton.disabled = false;
+        contactForm.submitButton.disabled = requiredFields.some(it => isBlank(it.value));
     };
     const checkerCurrent = async function checkRequiredInputs(event) {
         const field = event.target;
